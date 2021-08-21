@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import os
-st.write(os.getcwd())
+
 @st.cache
-def load_model():
+def load_mod():
        model=pd.read_pickle(r"/app/model.pkl")
        return model
-tree=load_model()
+tree=load_mod()
 
 st.title("Disease Prediction")
 st.markdown("****")
