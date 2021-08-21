@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 @st.cache
 def load_model():
-       model=pd.read_pickle(r"E:\my python\disease_prediction\model.pkl")
+       model=pd.read_pickle(r"../model.pkl")
        return model
 tree=load_model()
 
