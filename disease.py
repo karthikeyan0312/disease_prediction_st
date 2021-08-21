@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
+st.write(os.getcwd())
 @st.cache
 def load_model():
        model=pd.read_pickle(r"/model.pkl")
