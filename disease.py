@@ -5,7 +5,7 @@ import os
 st.write(os.getcwd())
 @st.cache
 def load_model():
-       model=pd.read_pickle(r"/model.pkl")
+       model=pd.read_pickle(r"/app/model.pkl")
        return model
 tree=load_model()
 
